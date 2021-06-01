@@ -6,7 +6,7 @@
 
 `SafariActivity` is a `UIActivity` subclass that provides an "Open In Safari" action to a `UIActivityViewController`.
 
-<img src="https://github.com/Ceylo/SafariActivity/raw/master/Media/screenshot.png" width="100">
+<img src="https://github.com/Ceylo/SafariActivity/raw/master/Media/screenshot.png" width="300">
 
 ## Installation
 
