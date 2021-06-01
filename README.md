@@ -1,12 +1,12 @@
 # SafariActivity
 
-[![Version](https://img.shields.io/github/v/release/Ceylo/SafariActivity)](https://github.com/Ceylo/SafariActivity/releases)
-[![License](https://img.shields.io/badge/license-MIT-lightgrey)](https://github.com/Ceylo/SafariActivity/blob/master/LICENSE.md)
+[![Version](https://img.shields.io/github/v/tag/Ceylo/SafariActivity)](https://github.com/Ceylo/SafariActivity/releases)
+[![License](https://img.shields.io/badge/license-BSD-lightgrey)](https://github.com/Ceylo/SafariActivity/blob/master/LICENSE.md)
 [![Platform](https://img.shields.io/badge/platform-iOS-lightgrey)](https://github.com/Ceylo/SafariActivity)
 
 `SafariActivity` is a `UIActivity` subclass that provides an "Open In Safari" action to a `UIActivityViewController`.
 
-![SafariActivity screenshot](https://github.com/Ceylo/SafariActivity/raw/master/Media/screenshot.png) "SafariActivity screenshot")
+![SafariActivity screenshot](https://github.com/Ceylo/SafariActivity/raw/master/Media/screenshot.png | width=200)
 
 ## Installation
 
