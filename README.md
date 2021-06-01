@@ -1,12 +1,12 @@
 # SafariActivity
 
 [![Version](https://img.shields.io/github/v/release/Ceylo/SafariActivity)](https://github.com/Ceylo/SafariActivity/releases)
-[![License](https://img.shields.io/github/license/Ceylo/SafariActivity)](https://github.com/Ceylo/SafariActivity/blob/master/LICENSE.md)
+[![License](https://img.shields.io/badge/license-MIT-lightgrey)](https://github.com/Ceylo/SafariActivity/blob/master/LICENSE.md)
 [![Platform](https://img.shields.io/badge/platform-iOS-lightgrey)](https://github.com/Ceylo/SafariActivity)
 
 `SafariActivity` is a `UIActivity` subclass that provides an "Open In Safari" action to a `UIActivityViewController`.
 
-![SafariActivity screenshot](https://github.com/Ceylo/SafariActivity/Media/Screenshot.png) "SafariActivity screenshot")
+![SafariActivity screenshot](https://github.com/Ceylo/SafariActivity/raw/master/Media/screenshot.png) "SafariActivity screenshot")
 
 ## Installation
 
@@ -22,7 +22,7 @@ it, simply add the following line to your `Package.swift`:
 ## Usage
 
 Simply create an instance of `SafariActivity` and pass that object into the applicationActivities array when creating a `UIActivityViewController`.
-See the Xcode project in [Example](https://github.com/Ceylo/SafariActivity/Example) for an example.
+See the Xcode project in [Example](https://github.com/Ceylo/SafariActivity/tree/master/Example) for an example.
 
 ### Swift
 
