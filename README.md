@@ -1,42 +1,40 @@
-# TUSafariActivity
+# SafariActivity
 
-[![Version](https://img.shields.io/cocoapods/v/TUSafariActivity.svg?style=flat)](http://cocoadocs.org/docsets/TUSafariActivity)
-[![License](https://img.shields.io/cocoapods/l/TUSafariActivity.svg?style=flat)](http://cocoadocs.org/docsets/TUSafariActivity)
-[![Platform](https://img.shields.io/cocoapods/p/TUSafariActivity.svg?style=flat)](http://cocoadocs.org/docsets/TUSafariActivity)
+[![Version](https://img.shields.io/github/v/release/Ceylo/SafariActivity)](https://github.com/Ceylo/SafariActivity/releases)
+[![License](https://img.shields.io/github/license/Ceylo/SafariActivity)](https://github.com/Ceylo/SafariActivity/blob/master/LICENSE.md)
+[![Platform](https://img.shields.io/badge/platform-iOS-lightgrey)](https://github.com/Ceylo/SafariActivity)
 
-`TUSafariActivity` is a `UIActivity` subclass that provides an "Open In Safari" action to a `UIActivityViewController`.
+`SafariActivity` is a `UIActivity` subclass that provides an "Open In Safari" action to a `UIActivityViewController`.
 
-![TUSafariActivity screenshot](http://cl.ly/image/2i0n0H3f2g1X/TUSafariActivity.png "TUSafariActivity screenshot")
+![SafariActivity screenshot](https://github.com/Ceylo/SafariActivity/Media/Screenshot.png) "SafariActivity screenshot")
 
 ## Installation
 
-### CocoaPods
+### SPM
 
-TUSafariActivity is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+SafariActivity is available through the [Swift Package Manager](https://swift.org/package-manager/). To install
+it, simply add the following line to your `Package.swift`:
 
-    pod 'TUSafariActivity', '~> 1.0'
+    dependencies: [
+        .package(url: "https://github.com/Ceylo/SafariActivity.git", from: "2.0.0")
+    ]
 
 ## Usage
 
-*(See example Xcode project)*
-
-Simply `alloc`/`init` an instance of `TUSafariActivity` and pass that object into the applicationActivities array when creating a `UIActivityViewController`.
-
-### Objective-C
-
-```objectivec
-NSURL *URL = [NSURL URLWithString:@"http://google.com"];
-TUSafariActivity *activity = [[TUSafariActivity alloc] init];
-UIActivityViewController *activityViewController = [[UIActivityViewController alloc] initWithActivityItems:@[URL] applicationActivities:@[activity]];
-```
+Simply create an instance of `SafariActivity` and pass that object into the applicationActivities array when creating a `UIActivityViewController`.
+See the Xcode project in [Example](https://github.com/Ceylo/SafariActivity/Example) for an example.
 
 ### Swift
 
 ```swift
-let URL = NSURL(string: "http://google.com")!
-let activity = TUSafariActivity()
-let activityViewController = UIActivityViewController(activityItems: [URL], applicationActivities: [activity])
+let url = URL(string: "https://github.com/")!
+let activityViewController =
+    UIActivityViewController(activityItems: [url],
+                             applicationActivities: [SafariActivity()])
 ```
 
 Note that you can include the activity in any `UIActivityViewController` and it will only be shown to the user if there is a URL in the activity items.
+
+## Credits
+
+This package is a fork of [TUSafariActivity](https://github.com/davbeck/TUSafariActivity). It was rewritten in Swift and adapted for SPM instead of CocoaPods.
